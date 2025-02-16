@@ -85,8 +85,8 @@ npm install
 ## 構築用環境変数設定
 
 ```bash
-export systemId= #
-export systemNumber= #
+export systemId= # 任意のシステムID ex) Alice, Bob
+export systemNumber= # 任意の番号 ex) 001, 999
 
 ```
 

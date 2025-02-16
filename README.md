@@ -1,5 +1,43 @@
 # aws-cdk-vpc
 
+## 概要
+
+本リポジトリの使い方とデプロイの仕方についてメモ
+
+## CDK初期構築手順
+
+### CloudShell
+
+CloudShellを起動
+
+![](./img/image.png)
+
+### CDK確認
+
+```bash
+cdk --version
+```
+
+![](./img/image-1.png)
+
+### CDK Bootstrap
+
+```bash
+cdk bootstrap
+```
+
+![](./img/image-2.png)
+
+### CloudFormation
+
+![](./img/image-3.png)
+
+### CDKToolkit
+
+CDKToolkitができていればOK
+
+![](./img/image-4.png)
+
 ## npm install
 
 ```bash

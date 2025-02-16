@@ -18,7 +18,12 @@ export class StackVpc extends Stack {
           cidrMask: 24,
         },
       ],
-      vpcName: `vpc-${systemId}-${systemNumber}`
+      vpcName: `vpc-${systemId}-${systemNumber}`,
+      gatewayEndpoints: {
+        S3: {
+          service: ec2.GatewayVpcEndpointAwsService.S3,
+        },
+      },
     });
 
     const endpointSecurityGroup = new ec2.SecurityGroup(this, 'EndpointSecurityGroup', { vpc });
@@ -26,14 +31,6 @@ export class StackVpc extends Stack {
 
     vpc.addInterfaceEndpoint('VpceCloudWatchLogs', {
       service: ec2.InterfaceVpcEndpointAwsService.CLOUDWATCH_LOGS,
-      securityGroups: [
-        endpointSecurityGroup
-      ],
-      open: false
-    });
-
-    vpc.addInterfaceEndpoint('VpceS3', {
-      service: ec2.InterfaceVpcEndpointAwsService.S3,
       securityGroups: [
         endpointSecurityGroup
       ],

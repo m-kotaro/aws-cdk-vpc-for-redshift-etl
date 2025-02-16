@@ -94,7 +94,7 @@ export systemNumber= # 任意の番号 ex) 001, 999
 
 ```bash
 cdk synth -c systemId=$systemId -c systemNumber=$systemNumber
-cdk deploy -c systemId=$systemId -c systemNumber=$systemNumber
+cdk deploy -c systemId=$systemId -c systemNumber=$systemNumber --require-approval never 
 
 ```
 

@@ -1,4 +1,4 @@
-# aws-cdk-vpc
+# aws-cdk-vpc-for-redshift-etl
 
 ## 概要
 

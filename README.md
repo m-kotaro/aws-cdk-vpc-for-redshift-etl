@@ -70,7 +70,8 @@ ll
 ## npm install
 
 ```bash
-cd aws-cdk-vpc-main/cdk/
+unzip aws-cdk-vpc-for-redshift-etl-main.zip
+cd aws-cdk-vpc-for-redshift-etl-main/cdk/
 npm install
 
 ```

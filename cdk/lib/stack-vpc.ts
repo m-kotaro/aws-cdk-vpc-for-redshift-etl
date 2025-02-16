@@ -32,6 +32,14 @@ export class StackVpc extends Stack {
       open: false
     });
 
+    vpc.addInterfaceEndpoint('VpceS3', {
+      service: ec2.InterfaceVpcEndpointAwsService.S3,
+      securityGroups: [
+        endpointSecurityGroup
+      ],
+      open: false
+    });
+
     vpc.addInterfaceEndpoint('VpceSecretsManager', {
       service: ec2.InterfaceVpcEndpointAwsService.SECRETS_MANAGER,
       securityGroups: [

@@ -12,6 +12,8 @@ CloudShellを起動
 
 ![](./img/image.png)
 
+---
+
 ### CDK確認
 
 ```bash
@@ -19,6 +21,8 @@ cdk --version
 ```
 
 ![](./img/image-1.png)
+
+---
 
 ### CDK Bootstrap
 
@@ -28,15 +32,40 @@ cdk bootstrap
 
 ![](./img/image-2.png)
 
+---
+
 ### CloudFormation
 
 ![](./img/image-3.png)
+
+---
 
 ### CDKToolkit
 
 CDKToolkitができていればOK
 
 ![](./img/image-4.png)
+
+
+## CDKデプロイ
+
+### ソースダウンロード
+
+![](./img/download-zip-01.drawio.png)
+
+### ソースアップロード
+
+![](./img/download-zip-02.drawio.png)
+
+### 確認
+
+```bash
+ll
+```
+
+![](./img/download-zip-03.png)
+
+---
 
 ## npm install
 
